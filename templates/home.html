@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Cadastro de Usuário</h5>
+          <p class="card-text">Usuários permitidos a logar no sistema e realizar operações.</p>
+          <a href="/novo-usuario" class="btn btn-primary">Novo usuário </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Cadastro de Paciente</h5>
+            <p class="card-text">Pacientes que usufruem dos serviços da clinica.</p>
+          <a href="/novo-paciente" class="btn btn-primary">Novo paciente</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Cadastro de Colaborador</h5>
+          <p class="card-text">Recursos do quadro de funcionários da empresa.</p>
+          <a href="/novo-colaborador" class="btn btn-primary">Novo colaborador</a>
+        </div>
+      </div>
+    </div>
+
+</div>
+{% endblock %}
