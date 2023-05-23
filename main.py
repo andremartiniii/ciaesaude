@@ -12,9 +12,6 @@ import bcrypt
 app = Flask(__name__)
 app.secret_key = "sua_chave_secreta"
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 ##################################################################################################
 ############################################ DATABASE ############################################
 ##################################################################################################
@@ -94,3 +91,10 @@ def login():
 def logout():
     session.pop('username', None)
     return render_template('landing_page.html', message='Logout realizado com sucesso!')
+
+#################################
+############## RUN ##############
+#################################
+
+if __name__ == '__main__':
+    app.run(debug=True)
