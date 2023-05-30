@@ -61,6 +61,11 @@ def register():
 ############## LOGIN ##############
 ###################################
 
+# Home
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
 # Login Page OKOKOKOK
 @app.route('/login')
 def login_page():
@@ -78,7 +83,7 @@ def login():
     # Verificar se o usuário existe e a senha está correta
     if user and bcrypt.checkpw(password.encode('utf-8'), user['password']):
         session['username'] = username
-        return render_template('home.html')
+        return redirect('/home')
     else:
         return render_template('login_page.html')
 
@@ -91,6 +96,22 @@ def login():
 def logout():
     session.pop('username', None)
     return render_template('landing_page.html', message='Logout realizado com sucesso!')
+
+###################################
+############## ROTAS ##############
+###################################
+
+@app.route('/novo-usuario')
+def novo_usuario():
+    return render_template('novos_usuarios.html')
+
+@app.route('/novo-paciente')
+def novo_paciente():
+    return render_template('novos_pacientes.html')
+
+@app.route('/novo-colaborador')
+def novo_colaborador():
+    return render_template('novos_usuarios.html')
 
 #################################
 ############## RUN ##############

@@ -1,0 +1,184 @@
+{% extends "layout.html" %}
+{% block title %}Cadastro - Colaborador{% endblock %}
+
+{% block content %}
+<br>
+<form method="POST">
+    <h3 align="center">Novo Colaborador</h3>
+
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        name="nome"
+        placeholder="Insira o nome completo"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Telefone</label>
+      <input
+        type="text"
+        class="form-control"
+        id="telefone"
+        name="telefone"
+        placeholder="Insira telefone"
+      />
+    </div>
+
+    <br>
+    <div class="form-group">
+      <label for="anexo">Documentos do profissional</label>
+      <input type="file" class="form-control-file" id="anexo">
+    </div>
+<br>
+<hr>
+<br>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="numeroConselhoAtuacao">Número do conselho de atuação</label>
+        <input
+          type="text"
+          class="form-control"
+          id="numeroConselhoAtuacao"
+          name="numeroConselhoAtuacao"
+          placeholder="Insira o número do conselho de atuação"
+        />
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="especialidade">Especialidade</label>
+        <input
+          type="text"
+          class="form-control"
+          id="especialidade"
+          name="especialidade"
+          placeholder="Insira a especialidade do colaborador"
+        />
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="pix">Pix</label>
+        <input
+          type="text"
+          class="form-control"
+          id="pix"
+          name="pix"
+          placeholder="Insira chave pix"
+        />
+      </div>
+    </div>
+    
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="banco">Banco</label>
+        <input
+          type="text"
+          class="form-control"
+          id="banco"
+          name="banco"
+          placeholder="Insira n. do banco"
+        />
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="agencia">Agência</label>
+        <input
+          type="text"
+          class="form-control"
+          id="agencia"
+          name="agencia"
+          placeholder="Insira n. da agencia"
+        />
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="contaDigito">Conta + digito</label>
+        <input
+          type="text"
+          class="form-control"
+          id="contaDigito"
+          name="contaDigito"
+          placeholder="Conta + digito"
+        />
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr>
+<br>
+
+<div class="form-group">
+  <label for="planosAtendidos">Planos atendidos</label>
+  <input
+    type="text"
+    class="form-control"
+    id="planosAtendidos"
+    name="planosAtendidos"
+    placeholder="Informe os planos que o colaborador atende"
+  />
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="dataCadastro">Data de cadastro</label>
+        <p>%% Data do sistema no momento de cadastro %%</p>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="dataFim">Data fim</label>
+        <p>%% Data do sistema no momento de finalização de cadastro %%</p>
+      </div>
+    </div>
+
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="status">Status</label>
+        <p>%% Ativo / Inativo %%</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr>
+<br>
+
+
+
+    <br />
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+
+{% endblock %}

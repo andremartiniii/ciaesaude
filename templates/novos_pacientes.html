@@ -1,0 +1,191 @@
+{% extends "layout.html" %}
+{% block title %}Cadastro - Paciente{% endblock %}
+
+{% block content %}
+<br>
+<form method="POST">
+    <h3 align="center">Novo Paciente</h3>
+
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        name="nome"
+        placeholder="Insira o nome completo"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="endereco">Endereço</label>
+      <input
+        type="text"
+        class="form-control"
+        id="endereco"
+        name="endereco"
+        placeholder="Insira o endereço"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="telefone">Telefone</label>
+      <input
+        type="telefone"
+        class="form-control"
+        id="telefone"
+        name="telefone"
+        placeholder="Insira um número para contato"
+      />
+    </div>
+
+    <br>
+    <hr>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="dataNascimento">Data de nascimento</label>
+            <input
+            type="date"
+            class="form-control"
+            id="dataNascimento"
+            name="dataNascimento"
+            />
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="idade">Idade</label>
+            <p>%% VALOR CALCULADO DE ACORDO COM A DATA DE NASCIMENTO %%</p>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="responsavel">Responsável</label>
+            <input
+            type="text"
+            class="form-control"
+            id="responsavel"
+            name="responsavel"
+            placeholder="Insira o nome do responsável se necessário"
+            />
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+    <hr>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm">
+          
+          <div class="form-group">
+            <label for="medicoSolicitante">Médico solicitante</label>
+            <input
+            type="text"
+            class="form-control"
+            id="medicoSolicitante"
+            name="medicoSolicitante"
+            /></div>
+          </div>
+          
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="crm">CRM</label>
+              <input
+              type="text"
+              class="form-control"
+              id="crm"
+              name="crm"
+              /></div>
+          </div>
+
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="ocupacao">Ocupação</label>
+              <input
+              type="text"
+              class="form-control"
+              id="ocupacao"
+              name="ocupacao"
+              /></div>
+          </div>
+
+      </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="opcaoAtendimento">Opção de atendimento</label>
+            
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="opcaoAtendimento" id="opcaoAtendimento">
+              <option selected>Selecione uma opção</option>
+              <option value="plano">Plano</option>
+              <option value="particular">Particular</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="numeroCarteirinha">N. carteirinha</label>
+            <input
+            type="text"
+            class="form-control"
+            id="numeroCarteirinha"
+            name="numeroCarteirinha"
+            /></div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input
+            type="text"
+            class="form-control"
+            id="empresa"
+            name="empresa"
+            /></div>
+        </div>
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="plano">Plano</label>
+            <input
+            type="text"
+            class="form-control"
+            id="plano"
+            name="plano"
+            /></div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="form-group">
+      <label for="anexo">Documento de encaminhamento</label>
+      <input type="file" class="form-control-file" id="anexo">
+    </div>
+
+
+
+
+
+
+    <br />
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+{% endblock %}

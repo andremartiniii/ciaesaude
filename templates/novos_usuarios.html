@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block title %}Cadastro - Usuário{% endblock %}
+
+{% block content %}
+<br>
+<form method="POST">
+    <h3 align="center">Novo Usuário</h3>
+
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        name="nome"
+        placeholder="Insira o nome completo"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Insira o email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="matricula">Matricula</label>
+      <input
+        type="matricula"
+        class="form-control"
+        id="matricula"
+        name="matricula"
+        placeholder="Insira o número da matricula"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="senha1">Senha</label>
+      <input
+        type="password"
+        class="form-control"
+        id="senha1"
+        name="senha1"
+        placeholder="Insira a senha do usuário"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="senha2">Confirme senha</label>
+      <input
+        type="password"
+        class="form-control"
+        id="senha2"
+        name="senha2"
+        placeholder="Confirme a senha"
+      />
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+{% endblock %}
