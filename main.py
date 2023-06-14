@@ -107,7 +107,7 @@ def novo_usuario():
 
 @app.route('/novo-paciente')
 def novo_paciente():
-    return render_template('novos_pacientes.html')
+    return render_template('paciente_novo.html')
 
 @app.route('/novo-colaborador')
 def novo_colaborador():
