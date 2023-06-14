@@ -101,17 +101,21 @@ def logout():
 ############## ROTAS ##############
 ###################################
 
-@app.route('/novo-usuario')
+@app.route('/colaborador-novo')
+def novo_colaborador():
+    return render_template('novos_colaboradores.html')
+
+@app.route('/usuario-novo')
 def novo_usuario():
     return render_template('novos_usuarios.html')
 
-@app.route('/novo-paciente')
-def novo_paciente():
+@app.route('/paciente-novo')
+def paciente_novo():
     return render_template('paciente_novo.html')
 
-@app.route('/novo-colaborador')
-def novo_colaborador():
-    return render_template('novos_usuarios.html')
+@app.route('/paciente-consulta')
+def paciente_consulta():
+    return render_template('paciente_consulta.html')
 
 #################################
 ############## RUN ##############
