@@ -3,20 +3,69 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; /* Adicione esta linha para remover as margens padrão */
+    }
+
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 150px;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h1 {
+      font-size: 24px;
+      color: #333333;
+      margin-bottom: 20px;
+      text-align: center;
+      background-image: url("https://scontent.fsdu29-1.fna.fbcdn.net/v/t39.30808-6/291455527_445562240911198_1467052856551705913_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=lKFGM8NJk6sAX9XfW6-&_nc_ht=scontent.fsdu29-1.fna&oh=00_AfBlBresN6APIY-1WSvny6Mq548xPAI-VV6H7bmu7k1YdA&oe=64A1EAF6");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 100px 0;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .container button:hover {
+      background-color: #45a049;
+    }
+
+    .container .message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666666;
+    }
+
+    .container .message a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Clínica e Saúde</h1>
-    </div>
-<br><br>
   <div class="container">
+    <h1></h1>
     <a href="/login">
-      <button type="submit" value="Login">Login</button>
+      <button type="submit">Login</button>
     </a>
-      <!-- <br><br>
-    <a href="/register">
-      <button type="submit" value="Register">Registrar-se</button>
-    </a> -->
   </div>
 </body>
 </html>
