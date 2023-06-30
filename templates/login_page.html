@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+      <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+      <!-- BOOTSTRAP -->
 <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
@@ -42,26 +45,26 @@
 
     .container button {
       color: #ffffff;
-      background-color: #4caf50;
+      background-color: #a9cf3c;
       border: none;
       cursor: pointer;
     }
 
     .container button:hover {
-      background-color: #45a049;
+      background-color: #afd34b;
     }
 
     .container img {
-      width: 250px; /* Aumenta o tamanho da imagem para 250px */
+      width: 350px; /* Aumenta o tamanho da imagem para 250px */
       height: auto; /* Permite que a altura da imagem seja ajustada automaticamente */
-      margin: 0 auto 10px; /* Centraliza a imagem horizontalmente e adiciona espaçamento inferior */
+      margin: 0 auto 20px; /* Centraliza a imagem horizontalmente e adiciona espaçamento inferior */
     }
   </style>
 </head>
 <body>
   <div class="container">
     <form action="/login" method="POST">
-      <img src="https://scontent.fsdu29-1.fna.fbcdn.net/v/t39.30808-6/291455527_445562240911198_1467052856551705913_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=lKFGM8NJk6sAX9XfW6-&_nc_ht=scontent.fsdu29-1.fna&oh=00_AfBlBresN6APIY-1WSvny6Mq548xPAI-VV6H7bmu7k1YdA&oe=64A1EAF6" alt="Logo">
+      <img src="https://bl6pap003files.storage.live.com/y4m2O-vUE-_uZ83sA18sUPOpW2oETokGI3sAsdKDp54ZHzU51SyHUd8PSbPGwwZcvPYJP09B1nGm_0UO3XFypAzI3X3Z7KPTuEPmBrBiE9bgFUGUKGN_-o0ixj-nU--TF4GVSyltLn4Bet_xZY9bM1TX5KWJIOqbHPsZ6-yaAjsz3TsNqhThhtr2xHhICFNTaLh?encodeFailures=1&width=803&height=237" alt="Logo">
       <input type="text" name="username" placeholder="Username" required>
       <input type="password" name="password" placeholder="Password" required>
       <button type="submit" value="Login">Login</button>
